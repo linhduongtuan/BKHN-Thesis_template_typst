@@ -1,5 +1,11 @@
 Hiểu biết cá nhân: typst có hai môi trường, mã và nội dung, trong môi trường mã, nó sẽ được thực thi theo mã và trong môi trường nội dung, nó sẽ được phân tích thành văn bản thông thường, môi trường mã được biểu thị bằng {} và môi trường nội dung được đại diện bởi []. Nội dung bắt đầu bằng \# để kết nối với một đoạn mã, chẳng hạn như \#set quy tắc, và \# không cần thiết để gọi mã trong khối được đặt trong dấu ngoặc nhọn.
 
+```cpp
+void setFib(void)
+{
+  fib(1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | 89, 10);
+}
+```
 
 === Tiêu đề
 
