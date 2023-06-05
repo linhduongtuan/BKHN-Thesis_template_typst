@@ -16,7 +16,7 @@ You can speed through typst from [here](https://typst.app/docs/tutorial)
 #### Online editing 
 
 An online editor (similar to overleaf) is also provided, check out this template:
-https://typst.app/project/pLKexPD4J5ADToO-HQEWz2
+[https://typst.app/project/pLKexPD4J5ADToO-HQEWz2](https://typst.app/project/pOkKbg3e0ZLRixSkcTMj4Z)
 
 （ps：Typst may visualize ugly Vietnamese font types such as Arial, New Computer Modern San, and Time New Roman）
 
