@@ -13,12 +13,6 @@ You can speed through typst from [here](https://typst.app/docs/tutorial)
 ### Install typst
 [typst Github homepage](https://github.com/typst/typst) provides a detailed installation tutorial.
 
-#### Online editing 
-
-An online editor (similar to overleaf) is also provided, check out this template:
-[[https://typst.app/project/pLKexPD4J5ADToO-HQEWz2](https://typst.app/project/pOkKbg3e0ZLRixSkcTMj4Z)](https://typst.app/project/rqXQAS1kwx1B5BLMnd21uJ)
-
-（ps：Typst may visualize ugly Vietnamese font types such as Arial, New Computer Modern San, and Time New Roman）
 
 #### Use your local machine
 ``` shell
