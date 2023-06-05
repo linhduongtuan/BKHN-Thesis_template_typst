@@ -39,6 +39,9 @@ $ make
 $ .\make.bat
 ```
 
+### An example thesis
+Please check file `thesis.pdf`
+
 ### How you can compose your documents?
 
 Modify the files in the `contents` directory
