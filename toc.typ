@@ -1,6 +1,5 @@
 #import "font.typ": *
 
-
 // Abbreviations
 #show heading : it => {
   set align(center)
@@ -83,21 +82,21 @@
 #pagebreak()
 
 // TODO: List of Formulas
-//#heading(level: 1, outlined: false)[List of Formulas]
-//#v(2em)
+#heading(level: 1, outlined: false)[List of Formulas]
+#v(2em)
 
-//#show outline: it => {
-//  set text(font: arial, size: font_size.footnotesize)
-//  set par(leading: 1em )
-//  it
-//}
-//#outline(
-//  title: none,
-//  target: figure.where(kind: formula),
-//  indent : true,
-//)
-//#pagebreak()
-
+#show outline: it => {
+  set text(font: arial, size: font_size.footnotesize)
+  set par(leading: 1em )
+  it
+}
+#outline(
+  title: none,
+  //target: figure.where(kind: equation),
+  target: math.equation,
+  indent : true,
+)
+#pagebreak()
 
 // Table of Contents
 #heading(level: 1, outlined: false)[Table of Contents]
@@ -118,6 +117,8 @@
   [LIST OF TABLES ] + [.] * 123 + [ V]
   set par(leading: 1em)
   [LIST OF FORMULAS ] + [.] * 115 + [ VI]
+  set par(leading: 1em)
+  [LIST OF EQUATIONS ] + [.] * 114 + [ VI]
   set par(leading: 1em)
   [TABLE OF CONTENTS ] + [.] * 110 + [ VII]
 }
