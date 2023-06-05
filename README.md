@@ -37,7 +37,7 @@ $ make
 $ .\make.bat
 ```
 
-### 编辑
+### How to edit the contents
 
 Modify the files in the `contents` directory
 
