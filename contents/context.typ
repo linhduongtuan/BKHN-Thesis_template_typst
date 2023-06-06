@@ -29,7 +29,12 @@ Personal opinion: as easy to use as Markdown, as powerful as LaTeX
   ],
 ) <fig-crate-logo>
 
-
+#figure(
+  image("../template/images/typst_long.png", width: 100%),
+  caption: [
+    "Typst Long Logo"
+  ],
+) <fig-typst-logo-2nlong>
 
 == Ngôn ngữ Rust
 *Giới thiệu*
