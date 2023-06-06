@@ -20,7 +20,10 @@
 
   // import the cover page 
   include "cover.typ"
-
+  
+ // import acknowledgement
+  include "acknowledgement.typ"
+  
 set page(
         
         header: {
@@ -48,8 +51,7 @@ set page(
   // import References 
   include "reference.typ"
 
-  // import acknowledgement
-  include "acknowledgement.typ"
+ 
 
   // import appendices
   include "appendix.typ"
