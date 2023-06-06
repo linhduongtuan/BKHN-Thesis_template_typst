@@ -1,7 +1,7 @@
 // Title in Vietnamese
-#let vn_title = "Luận Án Tiến Sỹ bảo vệ tại ĐHBKHN viết bằng Typst XXXXXXXXXXXXXYYYYYYYYYZZZZZZZ"
+#let vn_title = "CÁCH SỬ DỤNG CHATGPT ĐỂ HỖ TRỢ VIẾT LUẬN VĂN BĂNG TIẾNG ANH?"
 // Title in English
-#let en_title = "HUST graduating thesis Typst Template"
+#let en_title = "HOW TO USE CHATGPT TO IMPROVE THE QUALITY OF A THESIS WRITTEN IN ENGLISH?"
 // College/School/Faculty
 #let college = "SoICT"
 // Major/Discipline
