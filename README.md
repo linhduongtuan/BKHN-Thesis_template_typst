@@ -44,7 +44,7 @@ Modify the files in the `contents` directory
 This template is released under the Apache License. See the [LICENSE](./LICENSE) file for more details.
 
 #### References:
-(1) https://github.com/jujimeizuo/ZJGSU-typst-template
-(2) https://github.com/werifu/HUST-typst-template
-(3) https://github.com/QQKdeGit/bupt-typst
-(4) https://github.com/shuosc/SHU-Bachelor-Thesis-Typst
+- (1) https://github.com/jujimeizuo/ZJGSU-typst-template
+- (2) https://github.com/werifu/HUST-typst-template
+- (3) https://github.com/QQKdeGit/bupt-typst
+- (4) https://github.com/shuosc/SHU-Bachelor-Thesis-Typst
