@@ -50,7 +50,7 @@ This template is released under the Apache License. See the [LICENSE](./LICENSE)
 - *If you want to learn how to create a poster template, please refer to [my other repository](https://github.com/linhduongtuan/VNUHCM-typst-poster).*
 - *If you want to learn how to create presentation slides, please refer to [my other repository](https://github.com/linhduongtuan/DTU-typst-presentation).*
 
-#### Acknowledgement:
+#### Acknowledgements:
 - (1) https://github.com/jujimeizuo/ZJGSU-typst-template
 - (2) https://github.com/werifu/HUST-typst-template
 - (3) https://github.com/QQKdeGit/bupt-typst
