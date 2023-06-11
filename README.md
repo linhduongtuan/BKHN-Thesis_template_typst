@@ -43,6 +43,10 @@ Modify the files in the `contents` directory
 ## License
 This template is released under the Apache License. See the [LICENSE](./LICENSE) file for more details.
 
+### If you want to learn how to create presentation slides, please refer to [my other repository](https://github.com/linhduongtuan/DTU-typst-presentation).
+### If you want to learn how to create a scientific poster, please refer to [my other repository](https://github.com/linhduongtuan/VNUHCM-typst-poster).
+
+
 #### References:
 - (1) https://github.com/jujimeizuo/ZJGSU-typst-template
 - (2) https://github.com/werifu/HUST-typst-template
