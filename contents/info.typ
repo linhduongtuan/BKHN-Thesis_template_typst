@@ -1,5 +1,5 @@
 // Title in Vietnamese
-#let vn_title = "CÁCH SỬ DỤNG CHATGPT ĐỂ HỖ TRỢ VIẾT LUẬN VĂN BĂNG TIẾNG ANH?"
+#let vn_title = "CÁCH SỬ DỤNG CHATGPT ĐỂ HỖ TRỢ VIẾT LUẬN VĂN BẰNG TIẾNG ANH?"
 // Title in English
 #let en_title = "HOW TO USE CHATGPT TO IMPROVE THE QUALITY OF A THESIS WRITTEN IN ENGLISH?"
 // College/School/Faculty

@@ -1,5 +1,132 @@
-
+#import "../template/tablex.typ": tablex, cellx, rowspanx, colspanx, hlinex, vlinex, gridx, default-if-auto
 = Introduction
+
+#figure(
+  table(
+    //columns: (1fr, auto, auto),
+    columns: (200pt, 100pt, 100pt),
+    inset: 10pt,
+    stroke: 0.7pt,
+    align: horizon,
+    [], [*Area*], [*Parameters*],
+    image("../template/images/typst.jpeg", height: 15%),
+    $ pi h (D^2 - d^2) / 4 $,
+    [
+      $h$: height \
+      $D$: outer radius \
+      $d$: inner radius
+    ],
+    image("../template/images/typst_long.png", height: 4%),
+    $ sqrt(2) / 12 a^3 $,
+    [$a$: kích thước chiều dài]
+  ),
+  caption: "Bảng mẫu phô mai"
+)<tbl1>
+
+#figure(
+    image("../template/images/typst.jpeg", height: 15%),
+    caption: [Typst logo]
+  )<typst-logo>
+
+@typst-logo is the official logo for Typst.
+
+#figure(
+  table(
+    //columns: (1fr, auto, auto),
+    columns: (200pt, 100pt, 100pt),
+    inset: 10pt,
+    stroke: 0.7pt,
+    align: horizon,
+    [], [*Area*], [*Parameters*],
+    image("../template/images/typst.jpeg", height: 15%),
+    $ pi h (D^2 - d^2) / 4 $,
+    [
+      $h$: height \
+      $D$: outer radius \
+      $d$: inner radius
+    ],
+    image("../template/images/typst_long.png", height: 4%),
+    $ sqrt(2) / 12 a^3 $,
+    [$a$: kích thước chiều dài]
+  ),
+  caption: "Bảng mẫu phô mai"
+)<tbl2>
+
+#figure(
+  table(
+     columns: (auto, auto, auto, auto),
+     [gọi như thế nào], [bộ phận bạn đang ở], [một câu để giới thiệu], [một liên kết],
+      [Mauve], [Jike 2018], [Người Ali], [https://hukeqing.github.io],
+      [jujimeizuo], [Jike 2019], [Gà rau], [http://www.jujimeizuo.cn],
+      [kaka], [Jike 2019], [Nghiên cứu Hangdian], [https://ricar0.github.io],
+      [lx_tyin], [2020 Ji Ke], [Cao thủ huy chương vàng], [lxtyin.ac.cn]
+  ),
+  caption : [
+    ZJGSU ACMer
+  ]
+) <tab-acmer>
+
+#figure(
+    kind: table,
+    tablex(
+    columns: 6,
+    align: center + horizon,
+    auto-vlines: false,
+    repeat-header: true,
+    header-rows: 2,
+
+    /* --- header --- */
+    rowspanx(2)[*Type*], rowspanx(2)[*Original Task*], colspanx(3)[*Categorys*], (), rowspanx(2)[*Total*],
+    (),                 [*Benign*], [*Malignant*], [*Normal*], (), 
+    /* -------------- */
+    //vlinex(), vlinex(), vlinex(), vlinex(), vlinex(), vlinex(),
+    [Lin], [Object detection], [9,932], [15,475], [0], [25,407], hlinex(stroke: none), //remove the horizon line
+    [Al-Dhabyani], [Segmentation], [437], [210], [133], [780], hlinex(stroke: none), 
+    [Rodrigues], [Not applicable], [100], [150], [0], [250], 
+
+    [*Total*], [---], cellx(fill: gray)[10,469], cellx(fill: aqua, text(fill: red, weight: "bold", [15835])), cellx(fill: teal, text(fill: red, weight: "bold", [133])),  cellx(fill: rgb("#b1f2eb"), text(fill: rgb(25%, 13%, 65%), weight: "bold", [26,437]))),
+     caption: [Collection data used in this study]   
+)<tab-XXX>
+
+
+//#align(left)[
+ // #figure(caption: "Caption")[
+  ```c
+  printf("Hello world!\n");
+
+  // Comment
+  for (int i = 0; i < m; i++) {
+    for (int j = 0; j < n; j++) {
+      sum += 'a';
+    }
+  }
+
+  ```
+ // ]<code1>
+//]
+
+//#align(left)[
+// #figure(caption: "Caption")[
+```python
+def sqrt(x):
+  return x ** 0.5
+```
+//]<code1>
+//]
+
+#figure(
+  // alignment change currently only for 3 columns, can be changed tho
+  // scaling also dependent on header size
+  // normal typst #table function works just fine in that regard but is less customizable rn
+  //#parcio-table(3, 3, 
+  table(columns: (auto, auto, auto),
+    [*Header 1*], [*Header 2*], [*Header 3*],
+    [Row 1],[Row 1],[Row 1],
+    [Row 2],[Row 2],[Row 2],
+    
+  ),
+  caption: "Caption"
+)<tb1>
 
 == Giới thiệu khái quát về Typst 
 
@@ -253,13 +380,13 @@ Khoảng cách, phông chữ, v.v. đều do tôi sắp chữ. Nhưng chú ý c�
 
 == Tổng quan về mẫu
 
-Dự án này được viết lại bằng ngôn ngữ Typst để giúp sinh viên chưa tốt nghiệp của Đại học Công Thương Chiết Giang viết luận văn tốt nghiệp thuận tiện hơn. Mẫu này được tạo dựa trên hệ thống Typst, so với Latex@tex1989, nó là một phần mềm sắp chữ có cú pháp đơn giản hơn và có thể được sử dụng để sản xuất các bài báo và ấn phẩm khoa học chất lượng cao. Dự án hiện bao gồm trang bìa, tóm tắt, văn bản, tài liệu tham khảo, v.v. của bài báo và người dùng có thể sửa đổi và tùy chỉnh nó theo nhu cầu của họ.
+Dự án này được viết lại bằng ngôn ngữ Typst để giúp sinh viên chưa tốt nghiệp của Đại học Công Thương Chiết Giang viết luận văn tốt nghiệp thuận tiện hơn. Mẫu này được tạo dựa trên hệ thống Typst, so với Latex @latex, nó là một phần mềm sắp chữ có cú pháp đơn giản hơn và có thể được sử dụng để sản xuất các bài báo và ấn phẩm khoa học chất lượng cao. Dự án hiện bao gồm trang bìa, tóm tắt, văn bản, tài liệu tham khảo, v.v. của bài báo và người dùng có thể sửa đổi và tùy chỉnh nó theo nhu cầu của họ.
 
 
 
 == trích dẫn
 
-Đây là một tham chiếu đến các tài liệu tham khảo trong mẫu Latex cộng đồng nguồn mở@tex1989 @nikiforov2014 @algebra2000 @LuMan2016:Small-Spectral-Radius @HuQiShao2013:Cored-Hypergraphs @LinZhou2016:Distance-Spectral @KangNikiforov2014:Extremal-Problems @Qi2014:H-Plus-Eigenvalues @Nikiforov2017:Symmetric-Spectrum @BuFanZhou2016:Z-eigenvalues @impagliazzo2001complexity @impagliazzo2001problems @elffers2014scheduling @chrobak2017greedy @paturi1997satisfiability @book1980michael @papadimitriou1998combinatorial，Bạn có thể bấm vào số thứ tự để chuyển đến cuối văn bản để xem định dạng trích dẫn.
+Đây là một tham chiếu đến các tài liệu tham khảo trong mẫu Latex cộng đồng nguồn mở@latex @nikiforov2014 @algebra2000 @LuMan2016:Small-Spectral-Radius @HuQiShao2013:Cored-Hypergraphs @LinZhou2016:Distance-Spectral @KangNikiforov2014:Extremal-Problems @Qi2014:H-Plus-Eigenvalues @Nikiforov2017:Symmetric-Spectrum @BuFanZhou2016:Z-eigenvalues @impagliazzo2001complexity @impagliazzo2001problems @elffers2014scheduling @chrobak2017greedy @paturi1997satisfiability @book1980michael @papadimitriou1998combinatorial，Bạn có thể bấm vào số thứ tự để chuyển đến cuối văn bản để xem định dạng trích dẫn.
 
 
 
@@ -333,17 +460,17 @@ Công thức nội tuyến $a^2 + b^2 = c^2$ Công thức nội tuyến.
 
 == công thức độc lập
 
-Công thức độc lập, như được hiển thị bởi @eq-1.
+//Công thức độc lập, như được hiển thị bởi @eq-1.
 
-$
-    sum_(i=1)^(n) F_i(x) = F_1(x) + F_2(x) + ... + F_n(x)
-$ <eq-1>
+//$
+//    sum_(i=1)^(n) F_i(x) = F_1(x) + F_2(x) + ... + F_n(x)
+//$ <eq-1>
 
-Công thức độc lập, như được hiển thị bởi @eq-2.
+//Công thức độc lập, như được hiển thị bởi @eq-2.
 
-$
-    F_1(x) + F_2(x) + ... + F_n(x) = sum_(i=1)^(n) F_i(x)
-$ <eq-2>
+//$
+//    F_1(x) + F_2(x) + ... + F_n(x) = sum_(i=1)^(n) F_i(x)
+//$ <eq-2>
 
 #pagebreak()
 
