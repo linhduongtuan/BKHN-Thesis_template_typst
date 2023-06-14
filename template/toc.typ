@@ -1,6 +1,5 @@
 #import "font.typ": *
 
-
 // Abbreviations
 #show heading : it => {
   set align(center)
@@ -34,7 +33,7 @@
 
 #pagebreak()
 
-#show heading : it => {
+#show heading: it => {
   set align(center)
   set text(font: arial, size: font_size.large)
   it
@@ -50,9 +49,9 @@
 ] )
 
 // List of Figures
-#heading(level: 1, outlined: false)[List of Figures]
+#heading(level: 1, outlined: true)[List of Figures]
 #v(2em)
-
+/*
 #show outline: it => {
   set heading(numbering: "1.1")
   set text(font: arial, size: font_size.footnotesize)
@@ -64,10 +63,42 @@
   target: figure.where(kind: image),
   indent : true,
 )
+*/
+#show outline: it => {
+  set heading(numbering: "1.1.1")
+  set text(font: arial, size: font_size.footnotesize)
+  set par(leading: 1em )
+  it
+}
+#outline(
+  depth: 3,
+  title: none,
+  target: figure.where(kind: image),
+  indent: true,
+)
+
 #pagebreak()
 
 // List of Tables
-#heading(level: 1, outlined: false)[List of Tables]
+#heading(level: 1, outlined: true)[List of Tables]
+#v(2em)
+
+#show outline: it => {
+  set heading(numbering: "1.1.1")
+  set text(font: arial, size: font_size.footnotesize)
+  set par(leading: 1em )
+  it
+}
+#outline(
+  depth: 3,
+  title: none,
+  target: figure.where(kind: table),
+  indent: true,
+)
+#pagebreak()
+
+// TODO: List of Formulas
+#heading(level: 1, outlined: false)[List of Equations]
 #v(2em)
 
 #show outline: it => {
@@ -76,27 +107,13 @@
   it
 }
 #outline(
+  depth: 3,
   title: none,
-  target: figure.where(kind: table),
-  indent : true,
+  //target: figure.where(kind: equation),
+  target: math.equation,
+  indent: true,
 )
 #pagebreak()
-
-// TODO: List of Formulas
-//#heading(level: 1, outlined: false)[List of Formulas]
-//#v(2em)
-
-//#show outline: it => {
-//  set text(font: arial, size: font_size.footnotesize)
-//  set par(leading: 1em )
-//  it
-//}
-//#outline(
-//  title: none,
-//  target: figure.where(kind: formula),
-//  indent : true,
-//)
-//#pagebreak()
 
 
 // Table of Contents
@@ -119,6 +136,8 @@
   set par(leading: 1em)
   [LIST OF FORMULAS ] + [.] * 115 + [ VI]
   set par(leading: 1em)
+  [LIST OF EQUATIONS ] + [.] * 114 + [ VI]
+  set par(leading: 1em)
   [TABLE OF CONTENTS ] + [.] * 110 + [ VII]
 }
 #show outline: it => {
@@ -128,7 +147,7 @@
 }
 #outline(
   title: none,
-  indent : true,
+  indent: true,
 )
 
 

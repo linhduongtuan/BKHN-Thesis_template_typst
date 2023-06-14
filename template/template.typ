@@ -1,7 +1,6 @@
 #import "font.typ": *
-#import "tablex.typ": *
-
-
+//#import "tablex.typ": *
+#import "tablex.typ": tablex, cellx, rowspanx, colspanx, hlinex, vlinex, gridx, default-if-auto
 
 #let Thesis(
   // File path to Reference bib
@@ -95,8 +94,6 @@ set page(
 
   // import References 
   include "reference.typ"
-
-
 
   // import appendices
   include "appendix.typ"

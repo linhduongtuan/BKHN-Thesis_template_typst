@@ -1,11 +1,5 @@
 #import "font.typ": *
-
-// -----------------
-// zhnumbers utility function
-// @param: num, chapter number of level 1
-// @return: Chinese numbers corresponding to zhnum, num
-// - use `at` for indexing, ditch the horrible syntax
-// - Extended supported number range, updated to [0, 10]
+#set text(lang: "vi")
 
 #let RomanNumbers(num) = {
     let romanNum = (
