@@ -43,12 +43,14 @@ Modify the files in the `contents` directory
 ## License
 This template is released under the Apache License. See the [LICENSE](./LICENSE) file for more details.
 
+### If you want to learn how to create another thesis template, please refer to [my other repository](https://github.com/linhduongtuan/DTU-Thesis-template).
 ### If you want to learn how to create presentation slides, please refer to [my other repository](https://github.com/linhduongtuan/DTU-typst-presentation).
 ### If you want to learn how to create a scientific poster, please refer to [my other repository](https://github.com/linhduongtuan/VNUHCM-typst-poster).
 
 ### For further reference:
 - *If you want to learn how to create a poster template, please refer to [my other repository](https://github.com/linhduongtuan/VNUHCM-typst-poster).*
 - *If you want to learn how to create presentation slides, please refer to [my other repository](https://github.com/linhduongtuan/DTU-typst-presentation).*
+- *If you want to learn how to create another thesis template, please refer to [my other repository](https://github.com/linhduongtuan/DTU-Thesis-template).*
 
 #### Acknowledgements:
 - (1) https://github.com/jujimeizuo/ZJGSU-typst-template
